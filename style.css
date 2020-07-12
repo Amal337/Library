@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: rgb(233, 238, 217);    
+    height: 80px;
+    max-width: 100%;
+    padding-top: 40px;
+}
+
+ul{
+    text-decoration: none;   
+}
+
+li{
+    display: inline;
+    padding: 10px;
+    
+}
+
+li a{
+    text-decoration: none;
+    color: rgb(53, 51, 51);
+    font-weight: 600;
+    padding-top: 100px;
+}
+
+li a:hover{
+    color: rgba(62, 161, 194, 0.438);
+}
+
+#logo{
+    font-size: x-large;
+
+}
+img{
+    width: 100px;
+    padding: 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    align-items: center;
+    
+    
+}
+
+.book{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* border: 2px solid red; */
+    width: 350px;
+    margin: auto;
+    text-align: center;
+    transition: 0.3s;
+    padding: 10px;
+    margin: 20px;
+    flex: 0 1 24%;
+}
+
+.book:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.445);
+  }
+
+.book button{
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: rgba(94, 178, 211, 0.596);
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+  font-size: 12px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.book button:hover {
+    opacity: 0.7;
+  }
+
+footer{
+    background-color: rgb(233, 238, 217);
+    /* rgb(178, 199, 103) */
+    text-align: center;
+    color: rgb(53, 51, 51);
+    height: 100px;
+    padding: 30px;
+    max-width: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    
+
+}
