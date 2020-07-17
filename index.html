@@ -3,83 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="style.css">
     <title>Library</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li id="logo">&#128214;</li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Add a book</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav>
+        <ul>
+            <li id="logo">&#128214;</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><button class="open-button" onclick="openForm()">Add a book</button></li>
+        </ul>
+    </nav>
+  </header>
     <!-- cards to display books  -->
-    <div class="container">
-        <div class="book">
-            <img src="img/img1.jpg" alt="books">
-            <div id="info">
-                <p>The Hobbit</p>
-            </div>
-            <button>Remove</button>
-            <button>Read</button>
-        </div>
-
-        <div class="book">
-            <img src="img/img1.jpg" alt="books">
-            <div id="info">
-
-            </div>
-            <button>Remove</button>
-            <button>Read</button>
-        </div>
-        <div class="book">
-            <img src="img/img1.jpg" alt="books">
-            <div id="info">
-
-            </div>
-            <button>Remove</button>
-            <button>Read</button>
-        </div>
-
-        <div class="book">
-            <img src="img/img1.jpg" alt="books">
-            <div id="info">
-
-            </div>
-            <button>Remove</button>
-            <button>Read</button>
-        </div>
-
-        <div class="book">
-            <img src="img/img1.jpg" alt="books">
-            <div id="info">
-
-            </div>
-            <button>Remove</button>
-            <button>Read</button>
-        </div>
-
-        <div class="book">
-            <img src="img/img1.jpg" alt="books">
-            <div id="info">
-
-            </div>
-            <button>Remove</button>
-            <button>Read</button>
-        </div>
-        
-        
+    <div class="library">
     </div>
 
-    <!-- NEW BOOK button to allow user to input the details of the new 
-    book: author, title, number of pages, read. -->
-    <footer>
-        Amal&copy; 2020
-    </footer>
-    <script src="object.js"></script>
+    <div class="form-popup" id="myForm">
+        <form class="form-container">
+          <label for="title"><b>Title</b></label>
+          <input id="title" type="text" placeholder="Enter title" name="title" >
+      
+          <label for="author"><b>Author</b></label>
+          <input id="author" type="text" placeholder="Enter Author's name" name="author" >
+
+          <label for="pages"><b>Pages</b></label>
+          <input id="pages" type="number" placeholder="pages" name="pages" >
+
+          <button type="submit" id="add" class="btn">Add</button>
+          <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+      <footer>
+        <h4>Amal&copy; 2020</h4>
+      </footer>
+
+        <script src="object.js"></script>
 </body>
 </html>

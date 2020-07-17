@@ -1,12 +1,12 @@
 *{
-    margin: 0;
+    /* margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; */
     font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
-    background-color: rgb(233, 238, 217);    
+    background-color: rgba(179, 180, 176, 0.308);    
     height: 80px;
     max-width: 100%;
     padding-top: 40px;
@@ -42,16 +42,27 @@ img{
     padding: 10px;
 }
 
+.library{
+    display: flex;
+    /* border: 2px solid red; */
+    max-width: 1000px;
+    height: 100%;
+    margin: 30px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
 .container{
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 20px auto;
-    align-items: center;
-    
+    align-items: center;  
     
 }
+
 
 .book{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -62,14 +73,17 @@ img{
     transition: 0.3s;
     padding: 10px;
     margin: 20px;
-    flex: 0 1 24%;
+    justify-content: center;
+    /* flex: 0 1 24%; */
+    /* flex-direction: column; */
+    /* align-self: center; */
 }
 
 .book:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.445);
   }
 
-.book button{
+.removebtn{
   border: none;
   outline: 0;
   padding: 12px;
@@ -83,12 +97,12 @@ img{
   margin: 5px;
 }
 
-.book button:hover {
+.removebtn:hover {
     opacity: 0.7;
   }
 
 footer{
-    background-color: rgb(233, 238, 217);
+    background-color: rgba(179, 180, 176, 0.308);
     /* rgb(178, 199, 103) */
     text-align: center;
     color: rgb(53, 51, 51);
