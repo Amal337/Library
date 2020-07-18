@@ -3,34 +3,43 @@
     padding: 0;
     box-sizing: border-box; */
     font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+ body{background-color: #FDCAC7;
+    
 }
 
 header{
-    background-color: rgba(179, 180, 176, 0.308);    
+    background-color: #4A4CB0;
+    /* rgba(179, 180, 176, 0.308);     */
     height: 80px;
     max-width: 100%;
     padding-top: 40px;
 }
 
+
 ul{
     text-decoration: none;   
+    
 }
 
 li{
     display: inline;
     padding: 10px;
+
     
 }
 
 li a{
     text-decoration: none;
-    color: rgb(53, 51, 51);
+    color: rgba(255, 255, 255, 0.555);
     font-weight: 600;
     padding-top: 100px;
+    
 }
 
 li a:hover{
-    color: rgba(62, 161, 194, 0.438);
+    color: white;
 }
 
 #logo{
@@ -60,6 +69,7 @@ img{
     flex-wrap: wrap;
     margin: 20px auto;
     align-items: center;  
+
     
 }
 
@@ -74,6 +84,7 @@ img{
     padding: 10px;
     margin: 20px;
     justify-content: center;
+    /* background-color: #3131798a; */
     /* flex: 0 1 24%; */
     /* flex-direction: column; */
     /* align-self: center; */
@@ -88,7 +99,8 @@ img{
   outline: 0;
   padding: 12px;
   color: white;
-  background-color: rgba(94, 178, 211, 0.596);
+  background-color: #FE5240;
+  /* rgba(94, 178, 211, 0.596); */
   text-align: center;
   cursor: pointer;
   width: 50%;
@@ -102,10 +114,11 @@ img{
   }
 
 footer{
-    background-color: rgba(179, 180, 176, 0.308);
+    background-color: #4A4CB0;
+    /* rgba(179, 180, 176, 0.308); */
     /* rgb(178, 199, 103) */
     text-align: center;
-    color: rgb(53, 51, 51);
+    color: rgba(255, 255, 255, 0.555);
     height: 100px;
     padding: 30px;
     max-width: 100%;

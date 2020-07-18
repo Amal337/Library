@@ -8,7 +8,8 @@
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
   border: 2px solid red;
-  background-color: rgba(140, 46, 228, 0.883);
+  background-color: #FE5240;
+  /* rgba(140, 46, 228, 0.883); */
   color: white;
   padding: 10px 16px;
   border: none;
