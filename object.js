@@ -20,13 +20,15 @@ function Book(title, author, pages, read){
 // function to take user’s input and store it
 const addBook = (ev) => {
         ev.preventDefault(); //to stop form submitting 
-        let book = new Book( {
+        let book = 
+        //new Book( )
+            {
             // id: Date.now(),
             title: document.getElementById("title").value,
             author: document.getElementById("author").value,
             pages: document.getElementById("pages").value,
             // read: document.getElementById("read").value 
-        });
+        };
             library.push(book)
             document.querySelector('form').reset(); //to clear the form for another book
             saveToLocalStorage(library);
