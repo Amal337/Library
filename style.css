@@ -69,6 +69,7 @@ img{
     flex-wrap: wrap;
     margin: 20px auto;
     align-items: center;  
+   
 
     
 }
@@ -84,10 +85,8 @@ img{
     padding: 10px;
     margin: 20px;
     justify-content: center;
-    /* background-color: #3131798a; */
-    /* flex: 0 1 24%; */
-    /* flex-direction: column; */
-    /* align-self: center; */
+    border: 1px solid #4A4CB0;
+  
 }
 
 .book:hover {
@@ -99,7 +98,7 @@ img{
   outline: 0;
   padding: 12px;
   color: white;
-  background-color: #FE5240;
+  background-color: #fe5340b6;
   /* rgba(94, 178, 211, 0.596); */
   text-align: center;
   cursor: pointer;

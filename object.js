@@ -20,7 +20,7 @@ function Book(title, author, pages, read){
 // function to take user’s input and store it
 const addBook = (ev) => {
         ev.preventDefault(); //to stop form submitting 
-        let book ={
+        let book = {
             // id: Date.now(),
             title: document.getElementById("title").value,
             author: document.getElementById("author").value,
@@ -43,7 +43,7 @@ const addBook = (ev) => {
             
                 const card = document.createElement('div');
                 card.className ='book';
-                card.setAttribute = ('id', index);
+                card.setAttribute("id", index);
             
                 const img = document.createElement('img');/// add image
                 card.appendChild(img);
@@ -68,7 +68,7 @@ const addBook = (ev) => {
                 const removeBtn = document.createElement('button');
                 removeBtn.className ='removebtn';
                 removeBtn.innerHTML = 'Remove';
-                removeBtn.setAttribute = ('id'. index);            
+                removeBtn.setAttribute("id", index);            
                 removeBtn.addEventListener('click', removeBook);
             
                     
