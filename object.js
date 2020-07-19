@@ -34,6 +34,7 @@ const addBook = (ev) => {
             saveToLocalStorage(library);
             render();
     };       
+    
             //function for each book and displays each book on the page
          function render(){
              //get library Books from the local storage 
